@@ -16,7 +16,7 @@ app.get(`/api/v0/health`, (req, res) => {
     });
 });
 
-app.get(`/api/v0/comparison`, async (req, res) => {
+app.get(`/api/v0/info_box`, async (req, res) => {
     // Get random page
     const pageName = "Barak_Obama";//(await wiki().random())[0];
     const page = await wiki().page(pageName);
